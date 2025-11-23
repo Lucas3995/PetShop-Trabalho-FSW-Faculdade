@@ -6,36 +6,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Loja especializada em produtos e serviços para animais de estimação">
         <title>PetShop</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
-    <body>
+    <body class="d-flex flex-column min-vh-100">
         <header>
-            <h1>Petshop - Shop do Pet</h1>
-            <p><small>by John Doe</small></p>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./produtos.html">Produtos</a> </li>
-                <li><a href="./servicos.html">Serviços</a></li>
-            </ul>
-        </nav>
+            <nav class="navbar navbar-expand-lg bg-body-secondary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Shop do Pet </a> | 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./produtos.html">Produtos</a> </li>
+                            <li class="nav-item"><a class="nav-link" href="./servicos.html">Serviços</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <main>
-            <hr />
+        <main class="flex-grow-1">
             <section id="servicos">
                 <h1>PetShop - Shop do Pet</h1>
                 <article>
                     <h3>Uma história</h3>
                     <img src="./imagens/shop-do-pet.png" alt="uma pet shop muito legal" width="200">
-                    <p>vale um lore ipsum</p>
+                    <p>A loja com mais de 20 anos de experiência em produtos e serviços para pet.</p>
                 </article>
             </section>
         </main>
-        <footer>
-            <hr />
-            <p>PetShop - Todos os direitos reservados</p>
-            <p>Florisbelo Sistemas ltda.</p>
-            <p><a href="mailto:hege@example.com">pet@shop.com</a></p>
-            <address>Rua dos Animais, 123 - Centro - São Paulo/SP</address>
-    </footer>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-auto my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="mb-3 mb-md-0 text-body-secondary">© 2025 PetShop - Shop do Pet | Florisbelo Sistemas ltda</span> 
+                </div> 
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex"> 
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="mailto:hege@example.com" aria-label="email">
+                            pet@shop.com
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <div class="text-body-secondary" aria-label="endereço">
+                            <address>Rua dos Animais, 123 - Centro - São Paulo/SP</address>
+                        </div>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>

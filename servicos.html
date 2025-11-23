@@ -6,50 +6,91 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Loja especializada em produtos e serviços para animais de estimação">
         <title>PetShop</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
-    <body>
+    <body class="d-flex flex-column min-vh-100">
         <header>
-            <h1>Petshop - Shop do Pet</h1>
-            <p><small>by John Doe</small></p>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./produtos.html">Produtos</a> </li>
-                <li><a href="#">Serviços</a></li>
-            </ul>
-        </nav>
+            <nav class="navbar navbar-expand-lg bg-body-secondary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Shop do Pet </a> | 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./produtos.html">Produtos</a> </li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Serviços</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <main>
-            <section id="servicos">
-                <h1>Serviços</h1>
-                <hr />
-                <article>
-                    <h3>Banho</h3>
-                    <img src="./imagens/banho-pet.png" alt="Serviço de banho profissional para pets" width="200">
-                    <p>Banho completo com produtos hipoalergênicos, secagem profissional e limpeza de ouvidos.</p>
-                    <p><strong>Preço: R$ 75,00</strong></p>
-                </article>
-                
-                <article>
-                    <h3>Tosa</h3>
-                    <img src="./imagens/tosa-pet.png" alt="Serviço de tosa profissional para pets" width="200">
-                    <p>Tosa higiênica ou estética realizada por profissionais especializados, com técnicas adequadas para cada raça.</p>
-                    <p><strong>Preço: R$ 100,00</strong></p>
-                </article>
-                
-                <article>
-                    <h3>Telebusca</h3>
-                    <img src="./imagens/telebusca.png" alt="Serviço de busca e entrega de pets" width="200">
-                    <p>Nossos serviçõs tem a opção de buscar seu pet em domicílio por um valor adicional sobre o serviço contratado.</p>
-                    <p><strong>Preço: R$ 40,00</strong></p>
-                </article>
-            </section>
+        <main class="container flex-grow-1">
+            <h1>Serviços</h1>
+            <hr />
+            <div id="carouselExampleCaptions" class="carousel carousel-dark slide h-100">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner h-100" style=" width:100%;">
+                    <div class="carousel-item active">
+                        <img src="./imagens/banho-pet.png" class="d-block" height="225" alt="Serviço de banho profissional para pets">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Banho</h5>
+                            <p>Banho completo com produtos hipoalergênicos, secagem profissional e limpeza de ouvidos.</p>
+                            <p>Preço: <strong>R$ 75,00</strong></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagens/tosa-pet.png" class="d-block" height="225" alt="Serviço de tosa profissional para pets">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Tosa</h5>
+                            <p>Tosa higiênica ou estética realizada por profissionais especializados, com técnicas adequadas para cada raça.</p>
+                            <p>Preço: <strong>R$ 100,00</strong></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagens/telebusca.png" class="d-block" height="225" alt="Serviço de busca e entrega de pets">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Telebusca</h5>
+                            <p>Nossos serviçõs tem a opção de buscar seu pet em domicílio por um valor adicional sobre o serviço contratado.</p>
+                            <p>Preço: <strong>R$ 40,00</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </main>
-        <footer>
-            <p>PetShop - Todos os direitos reservados</p>
-            <p>Florisbelo Sistemas ltda.</p>
-            <p><a href="mailto:hege@example.com">pet@shop.com</a></p>
-            <address>Rua dos Animais, 123 - Centro - São Paulo/SP</address>
-    </footer>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-auto my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="mb-3 mb-md-0 text-body-secondary">© 2025 PetShop - Shop do Pet | Florisbelo Sistemas ltda</span> 
+                </div> 
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex"> 
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="mailto:hege@example.com" aria-label="email">
+                            pet@shop.com
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <div class="text-body-secondary" aria-label="endereço">
+                            <address>Rua dos Animais, 123 - Centro - São Paulo/SP</address>
+                        </div>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="./servicos.js" type="text/javascript"></script>
     </body>
 </html>
